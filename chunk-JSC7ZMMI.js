@@ -1,0 +1,1 @@
+import{$a as c,Aa as o,_a as t}from"./chunk-MIKK7PRU.js";var i=["*"],m=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=o({type:n,selectors:[["app-recommended"]],ngContentSelectors:i,decls:1,vars:0,template:function(e,d){e&1&&(t(),c(0))},encapsulation:2})};export{m as Recommended};

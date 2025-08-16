@@ -1,0 +1,1 @@
+import{Aa as t,Ua as o,Va as a,db as p}from"./chunk-MIKK7PRU.js";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-pagenotfound"]],decls:2,vars:0,template:function(e,i){e&1&&(o(0,"p"),p(1,"pagenotfound works!"),a())},encapsulation:2})};export{s as Pagenotfound};
