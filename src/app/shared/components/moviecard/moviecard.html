@@ -1,0 +1,49 @@
+<div
+  class="size-full bg-white rounded-2xl shadow-[0_0_10px] shadow-main dark:bg-white min-h-[25rem] overflow-hidden cursor-pointer group/moviecard"
+>
+  <figure class="w-full h-[12.5rem] relative overflow-hidden">
+    <img
+      class="size-full rounded-t-2xl shadow-[0_0_5px] shadow-main group-hover/moviecard:blur-xs group-hover/moviecard:scale-130 transition-transform duration-500"
+      [src]="imgSrc"
+      [alt]="title"
+    />
+    <div
+      class="overlay top-0 left-0 p-5 absolute size-full hidden group-hover/moviecard:flex group-hover/moviecard:flex-col group-hover/moviecard:items-center"
+    >
+      <div class="flex justify-between w-full">
+        <span class="block bg-white py-[.0781rem] px-2 rounded-2xl">
+          <i
+            class="fa-regular fa-bookmark fa-sm text-main hover:text-yellow-400 duration-300 transition-colors"
+          ></i>
+        </span>
+        <span
+          class="flex items-center font-bold bg-white rounded-md px-2 text-[.8125rem] leading-3"
+        >
+          <i class="fa-regular fa-star text-main me-[.3125rem]"></i>{{ rate }}
+        </span>
+      </div>
+      <div class="h-full flex justify-center items-center">
+        <i class="fa-regular fa-play-circle fa-3x text-white/50"></i>
+      </div>
+    </div>
+  </figure>
+  <div class="p-4">
+    <h3 class="mb-2 text-md font-bold tracking-tight text-main leading-8">
+      {{ title }}
+    </h3>
+    <p class="mb-2.5">
+      <span class="text-sm text-text-main font-semibold">Genre: </span
+      ><span class="text-xs text-gray-600">{{ genreNameList.join("/") }}</span>
+    </p>
+    <p class="mb-2.5">
+      <span class="text-sm text-text-main font-semibold">Release Date: </span
+      ><span class="text-xs text-gray-600">{{ releaseDate }}</span>
+    </p>
+    <p class="leading-normal">
+      <span class="text-sm text-text-main font-semibold">Overview: </span
+      ><span class="text-sm text-gray-600 line-clamp-3">{{
+        overview.split(" ", 10).join(" ")
+      }}</span>
+    </p>
+  </div>
+</div>

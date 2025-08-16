@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import TailwindCSS */
+@import "tailwindcss";
+
+@theme {
+  --color-main: #8b5e35;
+  --color-text-main: #090f41;
+  --color-section-bg-primary: #f6f6f6;
+  --color-section-bg-secondary: #f6f6f6;
+  --font-main: "Playwrite HU";
+}
+
+@utility custom-container {
+  width: 100%;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Import Flowbite Variable Themes */
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+/* Import Fontawesome */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Custome Styles */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #8b5e35 transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
