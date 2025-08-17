@@ -32,7 +32,6 @@ export class Products implements OnInit, OnDestroy {
     this.productsSubscription = this.fakeStoreAPI.getAllProducts().subscribe({
       next: (response) => {
         this.products = response;
-        console.log(response);
       },
       error: (err) => {
         console.log(`%c ${err.message}`, 'color:red');

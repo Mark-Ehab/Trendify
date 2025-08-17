@@ -38,7 +38,6 @@ export class Shows implements OnInit, OnDestroy {
       this.TMDB_API.getOfficialGenresList().subscribe({
         next: (response) => {
           this.officialGenresList = response.genres;
-          console.log(response.genres);
         },
         error: (err) => console.log(`%c ${err.message}`, 'color:red'),
       });
@@ -56,7 +55,6 @@ export class Shows implements OnInit, OnDestroy {
       {
         next: (response) => {
           this.trendingShows = response.results;
-          console.log(response.results);
         },
         error: (err) => console.log(`%c ${err.message}`, 'color:red'),
       }
